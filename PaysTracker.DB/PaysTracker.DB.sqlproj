@@ -62,9 +62,6 @@
     <Folder Include="dbo\Tables\" />
   </ItemGroup>
   <ItemGroup>
-    <RefactorLog Include="PaysTracker.DB.refactorlog" />
-  </ItemGroup>
-  <ItemGroup>
     <Build Include="dbo\Tables\__EFMigrationsHistory.sql" />
     <Build Include="dbo\Tables\ListePays.sql" />
     <Build Include="dbo\Tables\ListeRegimes.sql" />

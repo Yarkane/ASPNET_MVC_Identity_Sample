@@ -12,8 +12,8 @@ namespace PaysTracker.Models
         [Key]
         public string Nom { get; set; }
         public string Dirigeant { get; set; }
-        public int Surface { get; set; }
-        public int Population { get; set; }
+        public double Surface { get; set; }
+        public double Population { get; set; }
 
         // Foreign Key Regime
         [ForeignKey("Regime")]

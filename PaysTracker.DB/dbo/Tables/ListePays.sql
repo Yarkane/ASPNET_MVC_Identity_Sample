@@ -2,8 +2,8 @@
     [Nom]        NVARCHAR (450) NOT NULL,
     [RegimeId]   INT            NOT NULL,
     [Dirigeant]  NVARCHAR (MAX) NULL,
-    [Surface]    INT            NOT NULL,
-    [Population] INT            NOT NULL,
+    [Surface]    FLOAT (53)     NOT NULL,
+    [Population] FLOAT (53)     NOT NULL,
     CONSTRAINT [PK_ListePays] PRIMARY KEY CLUSTERED ([Nom] ASC),
     CONSTRAINT [FK_ListePays_ListeRegimes_RegimeId] FOREIGN KEY ([RegimeId]) REFERENCES [dbo].[ListeRegimes] ([RegimeId]) ON DELETE CASCADE
 );

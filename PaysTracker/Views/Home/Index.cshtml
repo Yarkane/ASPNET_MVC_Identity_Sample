@@ -1,9 +1,23 @@
-﻿@{
+﻿@model IEnumerable<PaysTracker.Models.Pays>
+
+@{
     ViewData["Title"] = "Home page";
 }
 
 <div class="text-center">
     <h1 class="display-4">PaysTracker</h1>
-    <a asp-controller="Pays" asp-action="Index">Cliquez ici pour voir la liste des Pays.</a><br />
-    <a asp-controller="Regimes" asp-action="Index">Cliquez ici pour voir la liste des régimes.</a>
 </div>
+
+<table class="table">
+    <thead><h5>Classement des pays selon la population.</h5></thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="row">
+                <td>@item.Nom</td>
+                <td>@item.Population</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
