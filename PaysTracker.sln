@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaysTracker", "PaysTracker\
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PaysTracker.DB", "PaysTracker.DB\PaysTracker.DB.sqlproj", "{CB72A780-E15F-4C9A-9FC6-9897B86F8573}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PaysTracker.ID", "PaysTracker.ID\PaysTracker.ID.sqlproj", "{8AF825BF-7423-4D1F-8B6E-6987C3156AED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,12 @@ Global
 		{CB72A780-E15F-4C9A-9FC6-9897B86F8573}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB72A780-E15F-4C9A-9FC6-9897B86F8573}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CB72A780-E15F-4C9A-9FC6-9897B86F8573}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8AF825BF-7423-4D1F-8B6E-6987C3156AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AF825BF-7423-4D1F-8B6E-6987C3156AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AF825BF-7423-4D1F-8B6E-6987C3156AED}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8AF825BF-7423-4D1F-8B6E-6987C3156AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AF825BF-7423-4D1F-8B6E-6987C3156AED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AF825BF-7423-4D1F-8B6E-6987C3156AED}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
