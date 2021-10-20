@@ -2,6 +2,23 @@
 
 @{
     ViewData["Title"] = "Home page";
+
+    string FormatNumber(double number)
+    {
+        if (number >= 1000000000000)
+            return (number / 1000000000000).ToString() + " tril";
+        else if (number >= 1000000000)
+            return (number / 1000000000).ToString() + " bil";
+        else if (number >= 1000000)
+            return (number / 1000000).ToString() + " mil";
+
+        return number.ToString();
+    }
+
+    string FormatCol(int i)
+    {
+        return (i % 2) == 0 ? "col-sm-2" : "col-sm-10";
+    }
 }
 
 <div class="text-center">
@@ -11,11 +28,13 @@
 <table class="table">
     <thead><h5>Classement des pays selon la population.</h5></thead>
     <tbody>
+        @{int i = 0;} 
         @foreach (var item in Model)
         {
-            <tr class="row">
-                <td>@item.Nom</td>
-                <td>@item.Population</td>
+            i++;
+            <tr class="@FormatCol(i)">
+                <td>@i.@item.Nom</td>
+                <td>@FormatNumber(item.Population)</td>
             </tr>
         }
     </tbody>

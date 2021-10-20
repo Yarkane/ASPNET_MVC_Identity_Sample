@@ -25,7 +25,7 @@ namespace PaysTracker.Controllers
 
         public async Task<IActionResult> IndexAsync()
         {
-            return View(await _context.ListePays.OrderBy(p => p.Population).ToListAsync());
+            return View(await _context.ListePays.OrderBy(p => p.Population).Reverse().ToListAsync());
         }
 
         public IActionResult Privacy()
